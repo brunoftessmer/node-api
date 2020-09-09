@@ -1,0 +1,11 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brunoftessmer/node-api.git",
+  "author": "Bruno Falcão <brunoftessmer@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
