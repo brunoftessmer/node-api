@@ -2,10 +2,27 @@
   "name": "nodeapi",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/brunoftessmer/node-api.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoftessmer/node-api.git"
+  },
   "author": "Bruno Falcão <brunoftessmer@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "mongoose": "^5.10.4"
+  },
+  "bugs": {
+    "url": "https://github.com/brunoftessmer/node-api/issues"
+  },
+  "homepage": "https://github.com/brunoftessmer/node-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "description": ""
 }
