@@ -7,8 +7,10 @@ const requireDir = require('require-dir');
 const app = express();
 
 //iniciando db
-mongoose.connect('mongodb://localhost:27017/node-api',{useNewUrlParser:true});
+mongoose.connect('mongodb://localhost:27017/node-api',{useNewUrlParser: true, useUnifiedTopology: true});
+
 requireDir('./src/models/');
+
 const Product = mongoose.model('Product');
 
 //rota
@@ -18,6 +20,8 @@ app.get('/',(req,res) => {
     description: 'É os guri do beck',
     url: 'http://github.com/facebook/react-native',
   });
+
+  return res.send("Hello World");
 
 });
 
